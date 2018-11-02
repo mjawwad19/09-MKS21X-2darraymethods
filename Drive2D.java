@@ -10,6 +10,7 @@ public class Drive2D {
     System.out.println(ArrayMethods.rowSum(multiC, 1)); //2
     System.out.println(ArrayMethods.rowSum(multiC, 2)); //0
     System.out.println(ArrayMethods.rowSum(multiC, 3)); //16
+    System.out.println(ArrayMethods.columnSum(multiC, 0));
 
   }
 }
