@@ -23,6 +23,20 @@ public class ArrayMethods{
       }
       return sum;
     }
+    /*
+   *PART 2 - use prior methods where appropriate
+   returns an array of the row sums for each row of ary.
+   Index i of the return array contains the sum of elements
+   in row i.*/
+   public static int[] allRowSums(int[][] ary) {
+     int[] rowSums = new int[ary.length];
+     for (int i = 0; i <ary.length; i++) {
+       rowSums[i] = rowSum(ary, i);
+       // hehe cheat :)
+     }
+     return rowSums;
+   }
+
 
 
   }
