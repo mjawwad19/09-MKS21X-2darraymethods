@@ -95,7 +95,7 @@ public class Driver {
     System.out.println("TESTING isRowMagic");
     System.out.println();
     System.out.println("ArrayMethods.isRowMagic(tester1) should return true");
-  /*  System.out.println(ArrayMethods.isRowMagic(tester1));
+    System.out.println(ArrayMethods.isRowMagic(tester1));
     System.out.println("ArrayMethods.isRowMagic(tester2) should return false");
     System.out.println(ArrayMethods.isRowMagic(tester2));
     System.out.println();
@@ -112,6 +112,6 @@ public class Driver {
     System.out.println("|                                 |");
     System.out.println("|             FINISH              |");
     System.out.println("|                                 |");
-    System.out.println(" ---------------------------------");*/
+    System.out.println(" ---------------------------------");
   }
 }

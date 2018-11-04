@@ -37,7 +37,8 @@ public class Drive2D {
     System.out.println(ArrayMethods.columnSum(multiC, 3)); //2
     printArray1(ArrayMethods.allColSums(multiC)); // [4, 4, 11, 2]
     System.out.println();
-    
+    System.out.println(ArrayMethods.isRowMagic(multiC)); // false;
+    System.out.println(ArrayMethods.isColumnMagic(multiC)); //false;
 
   }
 }
