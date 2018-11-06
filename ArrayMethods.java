@@ -2,7 +2,7 @@ public class ArrayMethods{
    /*PART 1
    returns the sum of the elements in Row x of ary. */
    public static int rowSum(int[][] ary, int x) {
-      if (x > ary.length || x < 0) return 0;
+      if (x >= ary.length || x < 0) return 0;
       int sum = 0;
       for (int i = 0; i < ary[x].length; i++) {
         sum += ary[x][i];
@@ -14,7 +14,7 @@ public class ArrayMethods{
    public static int columnSum(int[][] ary, int x) {
       int sum = 0;
       for (int i = 0; i <ary.length; i++) {
-        if (x < ary[i].length) {
+        if (x >= 0 && x < ary[i].length) {
           //this takes care of diff length rows
           sum += ary[i][x];
         }
@@ -50,7 +50,7 @@ public class ArrayMethods{
       }
     }
     int[] colSums = new int[maxLength];
-    for (int i = 0; i <ary.length; i++) {
+    for (int i = 0; i <maxLength; i++) {
       colSums[i] = columnSum(ary, i);
     }
     return colSums;
